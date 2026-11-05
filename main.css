@@ -8,8 +8,8 @@ body {
     margin: 0;
 }
 
-.contactpage{
-    background-image: linear-gradient(25deg, rgb(106, 0, 103), rgb(23, 94, 249));;
+.contactpage {
+    background-image: linear-gradient(25deg, rgb(106, 0, 103), rgb(23, 94, 249));
 }
 
 .header {
@@ -34,18 +34,21 @@ body {
     text-decoration: none;
 
     background-color: rgb(68, 65, 255, 0.482);
-      padding: 50px;
-        padding-right: 100px;
+    padding: 50px;
+    padding-right: 100px;
     border-radius: 15px;
 }
 
-.projects {
-    grid-area: projects;
+.buttons:hover{
+    transform: scale(1.05);
+    transition-duration: 0.4s;
+
+    border: solid 1px #ffffff;
 }
 
-.contact {
-    grid-area: contact;
-}
+.projects {grid-area: projects;}
+
+.contact {grid-area: contact;}
 
 .yourmom {
     color: #fff;
@@ -79,15 +82,15 @@ body {
     display: grid;
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: auto;
-    gap: 0px 30px;
     grid-template-areas:
-        "goede-doel project2 project3"
-        "project4 . ."
-        ". . .";
+    "goede-doel project2 project3"
+    "project4 . ."
+    ". . .";
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
-
+    
     filter: drop-shadow(15px);
+    gap: 0px 30px;
     gap: 50px
 }
 
@@ -102,33 +105,26 @@ body {
     border-radius: 15px;
 }
 
-.goede-doel {
-    grid-area: goede-doel;
-}
+.goede-doel {grid-area: goede-doel;}
 
-.project2 {
-    grid-area: project2;
-}
+.project2 {grid-area: project2;}
 
-.project3 {
-    grid-area: project3;
-}
+.project3 {grid-area: project3;}
 
-.project4 {
-    grid-area: project4;
-}
+.project4 {grid-area: project4;}
 
 .project:hover {
+    border: solid 1px #ffffff;
+
     transform: scale(1.05);
     transition-duration: 0.4s;
-    border: solid 1px #ffffff;
 }
 
-.progectpage{
+.progectpage {
     background-image: linear-gradient(45deg, rgb(13, 11, 159), rgb(167, 82, 11));
 }
 
-.contactinfo{
+.contactinfo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,20 +138,21 @@ body {
     gap: 20px;
 }
 
-.nametext{
+.nametext {
     color: #fff;
 }
 
-.emailtext{
+.emailtext {
     color: #fff;
 }
 
-.messagetext{
+.messagetext {
     color: #fff;
 }
 
-.submitbutton{
+.submitbutton {
     border: none;
+    
     background-color: rgb(255, 0, 208);
     color: rgb(255, 255, 255);
 }
